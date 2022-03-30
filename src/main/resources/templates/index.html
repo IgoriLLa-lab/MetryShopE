@@ -5,7 +5,8 @@
     <title>Metry Shop</title>
 </head>
 <body>
-<a th:href="@{/users/new}">Users</a>
-<a th:href="@{/login}">Login</a>
+<div th:insert="~{fragments/menu :: #nav-menu}"></div>
+
+<h2>Колличество кликов - <b th:text="${amountClicks}">10</b></h2>
 </body>
 </html>
